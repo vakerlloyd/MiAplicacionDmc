@@ -1,0 +1,5 @@
+streamlit
+numpy
+pandas
+libreria_funciones_proyecto1
+libreria_clases_proyecto1
