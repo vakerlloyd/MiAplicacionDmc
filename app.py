@@ -201,6 +201,14 @@ def ejercicio_3():
     # Botón para ejecutar
     if st.button("Calcular"):
         if funcion == "calcular_imc":
+            if peso <= 0:
+                st.error("El peso debe ser mayor a 0")
+                return
+            else:
+                if altura <= 0:
+                    st.error("La altura debe ser mayor a 0")
+                    return
+            
             resultado = calcular_imc(peso, altura)
             
             # Mostrar resultado
